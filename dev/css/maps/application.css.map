@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/scss/application.scss","../application.css"],"names":[],"mappings":"AAAA;EACE,mBAAkB;CCCnB","file":"../application.css","sourcesContent":[null,".col-lg-4 {\r\n  text-align: center;\r\n}\r\n\r\n/*# sourceMappingURL=application.css.map */\r\n"]}

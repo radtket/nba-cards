@@ -1,0 +1,44 @@
+img {
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.container .team--wrap {
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	.container .team--wrap {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.container .team--wrap {
+		width: 33.33%;
+	}
+}
+
+.container .team--wrap::before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.container .team--wrap__content {
+	max-width: 70%;
+}

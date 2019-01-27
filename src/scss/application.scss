@@ -1,0 +1,43 @@
+@import "../../node_modules/sass-mediaqueries/_media-queries";
+
+img {
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+
+// Layout
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+
+	.team--wrap {
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		text-align: center;
+		width: 100%;
+
+		@include mq($min-width: 600px) {
+			width: 50%;
+		}
+
+		@include mq($min-width: 800px) {
+			width: 33.33%;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 100%;
+		}
+
+		&__content {
+			max-width: 70%;
+		}
+	}
+}
